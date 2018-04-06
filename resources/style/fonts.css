@@ -1,0 +1,55 @@
+/*-------------------------
+FONTS DECLARATION
+-------------------------*/
+@font-face {
+    font-family: 'Arnhem Bold';
+    src: url('../fonts/Arnhem-Bold.woff2') format('woff2'), url('../fonts/Arnhem-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Graphik Regular';
+    src: url('../fonts/Graphik-Regular.woff2') format('woff2'), url('../fonts/Graphik-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Graphik Bold';
+    src: url('../fonts/Graphik-Bold.woff2') format('woff2'), url('../fonts/Graphik-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+/*-------------------------
+PAGE FONTS
+-------------------------*/
+body{
+    font: 400 16px/28px 'Graphik Regular', sans-serif;
+    letter-spacing: 0.25px;
+    color: #737780;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+h1{
+    font: 700 3.75rem/4.4rem 'Arnhem Bold', serif;
+    letter-spacing: 1px;
+    color: #fff;
+}
+h2, h5{
+    font: 700 2rem/2.25rem 'Arnhem Bold', serif;
+    color: #5C5F66;
+    margin: 0 0 1rem 0;
+}
+h3{
+    font: 700 1rem/1.5rem 'Arnhem Bold', serif;
+    color: #5C5F66;
+    margin: 0 0 1rem 0;
+}
+h4{
+    font: 700 1.5rem/4.375rem 'Arnhem Bold', serif;
+    color: #22A7F0;
+}
+[class^="icon-"], [class*=" icon-"] {
+    /* Simple line icons */
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+}

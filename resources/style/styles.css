@@ -10,11 +10,160 @@ NOTE 1: See reset.css for foundations
 NOTE 2: See fonts.css for icons and fonts declarations
 
 ---------------------------
-GLOBAL
+GLOBAL & RE-USE
 -------------------------*/
 body{
-
+    background: #F5F6FA;
+}
+.pill{
+    height: 0.75rem;
+    width: 3.75rem;
+    background: #FCF113;
+    border: none;
+    margin: 1.5rem auto 0 auto;
+}
+.button{
+    border-radius: 1.5rem;
+    background: #22A7F0;
+    color: #fff;
+    font: 400 1rem/3rem 'Graphik Regular', sans-serif;
+    padding: 0 1.5rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    max-width: 100%;
+    display: inline-block;
+}
+.button:hover, .button:focus, .button:active{
+    transform: scale(1.05);
+}
+.bold{
+    font-weight: 700;
 }
 /*-------------------------
-?
+LAYOUT
 -------------------------*/
+.header{
+    margin: 4.375rem 0 0 0;
+    width: 100%;
+    background: #5C5F66 url("../img/top-bait-seafood-festival.jpg") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    text-align: center;
+}
+.header__wrapper{
+    width: 40%;
+    padding: 13vh 0 17vh;
+    margin: 0 auto;
+}
+.header__description{
+    color: #fff;
+    margin: 1.5rem 0 2rem 0;
+}
+.col{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #fff;
+    box-shadow: 0 0.125rem 0.5rem rgba(184,190,204,0.2);
+}
+.col__3-2{
+    width: calc((100% / 3) * 2);
+}
+.col__3-1{
+    width: calc(100% / 3);
+    padding: 3rem;
+}
+.divider{
+    margin: 0 auto;
+    padding: 4rem 0;
+    text-align: center;
+}
+/*-------------------------
+NAV
+-------------------------*/
+.nav{
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: 0 0.125rem 0.5rem rgba(184,190,204,0.2);
+    z-index: 1000;
+    padding: 0 3.125rem;
+}
+.nav__links{
+    padding: 1.3125rem 0;
+}
+.nav__single-link{
+    display: inline;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    line-height: 1rem;
+    margin: 0 0 0 3.125rem;
+}
+.nav__single-link:after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    width: 0;
+    bottom: -1.7rem;
+    background: #FCF113;
+    height: 0.5rem;
+    transition-property: width;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+    pointer-events: none
+}
+.nav__single-link:hover, .nav__single-link:focus, .nav__single-link:active{
+    color: #5C5F66;
+}
+.nav__single-link:hover:after, .nav__single-link:focus:after, .nav__single-link:active:after{
+    left: 0;
+    right: auto;
+    width: 100%;
+}
+/*-------------------------
+GOOGLE MAPS & RESTAURANT
+-------------------------*/
+#map{
+    height: 75vh;
+    width: 100%;
+}
+.map__footer{
+    padding: 1.3125rem 3.125rem;
+}
+.map-pin{
+    display: inline-block;
+    vertical-align: baseline;
+    position: relative;
+    bottom: -.25rem;
+    color: #22A7F0;
+}
+#distance-from-location{
+    display: inline-block;
+    padding: 0 0 0 1rem;
+}
+.restaurant__name{
+    color: #22A7F0;
+}
+.restaurant__rating{
+    display: block;
+    margin: 1rem 0;
+
+}
+.icon-star{
+    color: #B8BECC;
+    margin: 0 .25rem 0 0;
+}
+.feature-image{
+    background: #5C5F66 url("../img/top-bait-get-involved.jpg") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}

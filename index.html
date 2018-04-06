@@ -4,11 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="resources/style/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
     <link rel="stylesheet" type="text/css" href="resources/style/fonts.css">
     <link rel="stylesheet" type="text/css" href="resources/style/styles.css">
     <title>Top Bait Seafood Festival | Home</title>
 </head>
 <body>
-
+    <!-- NAVIGATION -->
+    <nav class="nav">
+        <h4>Top bait festival</h4>
+        <ul class="nav__links">
+            <li class="nav__single-link">What's on</li>
+            <li class="nav__single-link">Get involved</li>
+        </ul>
+    </nav>
+    <!-- END NAVIGATION -->
+    <header class="header">
+        <!-- BG IMAGE REF: Unsplash (2018) Juercasa County Festival. Available at: https://unsplash.com/photos/45AJzT4mGOs (Accessed: 5th April 2018) -->
+        <section class="header__wrapper">
+            <h1>Discover seafood  in the North East</h1>
+            <p class="header__description">Huge offers on seafood at participating restaurants in Newcastle Upon-Tyne.  21st - 23rd August 2018.</p>
+            <span class="button">See what's on</span>
+        </section>
+    </header>
+    <section class="divider">
+        <h2>What's on</h2>
+        <hr class="pill">
+    </section>
+    <!-- GOOGLE MAP FEATURE -->
+    <section class="col">
+        <article class="col__3-2">
+            <section id="map"></section>
+            <!-- DISTANCE FROM LOCATION -->
+            <aside class="map__footer">
+                <span class="icon-location-pin map-pin"></span>
+                <p id="distance-from-location">Las Iguanas is 0.1 km from your location</p>
+            </aside>
+            <!-- END DISTANCE FROM LOCATION -->
+        </article>
+        <!-- INFORMATION PANEL -->
+        <article class="col__3-1 restaurant">
+            <h5 class="restaurant__name">Las Iguanas</h5>
+            <p class="restaurant__address">62-74 Grey St, Newcastle upon Tyne NE1 6AF</p>
+            <section class="restaurant__rating">
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+            </section>
+            <h3>Recent tweets</h3>
+            <section class="restaurant__tweets"></section>
+        </article>
+        <!-- END INFORMATION PANEL -->
+    </section>
+    <!-- END GOOGLE MAP FEATURE -->
+    <section class="divider">
+        <h2>Get involved</h2>
+        <hr class="pill">
+    </section>
+    <section class="col">
+        <article class="col__3-1">
+            <h5>Excited as we are?</h5>
+            <p>Tweet about the event and help spread awareness</p>
+        </article>
+        <article class="col__3-2 feature-image">
+            <!-- BG IMAGE REF: Unsplash (2018) Somewhere in the middle of Summer. Available at: https://unsplash.com/photos/rJctOLt1CAQ (Accessed: 5th April 2018) -->
+        </article>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtHAST1NAx5CdTYlHVhPLSZ474iB72ij4&callback=initMap"></script>
 </body>
 </html>
