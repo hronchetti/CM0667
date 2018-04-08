@@ -23,7 +23,7 @@ FONTS DECLARATION
 PAGE FONTS
 -------------------------*/
 body{
-    font: 400 16px/28px 'Graphik Regular', sans-serif;
+    font: 400 1rem/1.75rem 'Graphik Regular', sans-serif;
     letter-spacing: 0.25px;
     color: #737780;
     -webkit-font-smoothing: antialiased;

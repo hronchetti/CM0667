@@ -16,7 +16,7 @@ body{
     background: #F5F6FA;
 }
 .pill{
-    height: 0.75rem;
+    height: .75rem;
     width: 3.75rem;
     background: #FCF113;
     border: none;
@@ -31,7 +31,7 @@ body{
     letter-spacing: 1px;
     cursor: pointer;
     transition-property: transform;
-    transition-duration: 0.3s;
+    transition-duration: .3s;
     max-width: 100%;
     display: inline-block;
 }
@@ -66,7 +66,7 @@ LAYOUT
     justify-content: space-between;
     flex-wrap: wrap;
     background: #fff;
-    box-shadow: 0 0.125rem 0.5rem rgba(184,190,204,0.2);
+    box-shadow: 0 .125rem .5rem rgba(184,190,204,.2);
 }
 .col__3-2{
     width: calc((100% / 3) * 2);
@@ -92,7 +92,7 @@ NAV
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    box-shadow: 0 0.125rem 0.5rem rgba(184,190,204,0.2);
+    box-shadow: 0 .125rem .5rem rgba(184,190,204,.2);
     z-index: 1000;
     padding: 0 3.125rem;
 }
@@ -115,9 +115,9 @@ NAV
     width: 0;
     bottom: -1.7rem;
     background: #FCF113;
-    height: 0.5rem;
+    height: .5rem;
     transition-property: width;
-    transition-duration: 0.2s;
+    transition-duration: .2s;
     transition-timing-function: ease-out;
     pointer-events: none
 }
@@ -146,9 +146,13 @@ GOOGLE MAPS & RESTAURANT
     bottom: -.25rem;
     color: #22A7F0;
 }
-#distance-from-location{
+.distance-from-location{
     display: inline-block;
     padding: 0 0 0 1rem;
+}
+.restaurant{
+    height: calc(75vh + 4.65rem);
+    overflow-y: auto;
 }
 .restaurant__name{
     color: #22A7F0;
@@ -156,11 +160,17 @@ GOOGLE MAPS & RESTAURANT
 .restaurant__rating{
     display: block;
     margin: 1rem 0;
-
 }
 .icon-star{
     color: #B8BECC;
     margin: 0 .25rem 0 0;
+}
+.location-info{
+    max-width: 15rem;
+}
+.location-info__address{
+    padding: .5rem 0;
+    line-height: 1.4rem;
 }
 .feature-image{
     background: #5C5F66 url("../img/top-bait-get-involved.jpg") no-repeat;

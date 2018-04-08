@@ -14,8 +14,8 @@
     <nav class="nav">
         <h4>Top bait festival</h4>
         <ul class="nav__links">
-            <li class="nav__single-link">What's on</li>
-            <li class="nav__single-link">Get involved</li>
+            <li class="nav__single-link"><a href="javascript:smoothScrollWhatsOn();">What's on</a></li>
+            <li class="nav__single-link"><a href="javascript:smoothScrollGetInvolved();">Get involved</a></li>
         </ul>
     </nav>
     <!-- END NAVIGATION -->
@@ -24,7 +24,7 @@
         <section class="header__wrapper">
             <h1>Discover seafood  in the North East</h1>
             <p class="header__description">Huge offers on seafood at participating restaurants in Newcastle Upon-Tyne.  21st - 23rd August 2018.</p>
-            <span class="button">See what's on</span>
+            <a href="javascript:smoothScrollWhatsOn();" class="button">See what's on</a>
         </section>
     </header>
     <section class="divider">
@@ -38,22 +38,17 @@
             <!-- DISTANCE FROM LOCATION -->
             <aside class="map__footer">
                 <span class="icon-location-pin map-pin"></span>
-                <p id="distance-from-location">Las Iguanas is 0.1 km from your location</p>
+                <p class="distance-from-location">Hover over a restaurant to see how far away you are</p>
             </aside>
             <!-- END DISTANCE FROM LOCATION -->
         </article>
         <!-- INFORMATION PANEL -->
         <article class="col__3-1 restaurant">
-            <h5 class="restaurant__name">Las Iguanas</h5>
-            <p class="restaurant__address">62-74 Grey St, Newcastle upon Tyne NE1 6AF</p>
+            <h5 class="restaurant__name"></h5>
+            <p class="restaurant__address">Hover over an icon on the map to learn about restaurants involved</p>
             <section class="restaurant__rating">
-                <span class="icon-star"></span>
-                <span class="icon-star"></span>
-                <span class="icon-star"></span>
-                <span class="icon-star"></span>
-                <span class="icon-star"></span>
             </section>
-            <h3>Recent tweets</h3>
+            <h3></h3>
             <section class="restaurant__tweets"></section>
         </article>
         <!-- END INFORMATION PANEL -->
@@ -65,7 +60,7 @@
     </section>
     <section class="col">
         <article class="col__3-1">
-            <h5>Excited as we are?</h5>
+            <h5>As excited as we are?</h5>
             <p>Tweet about the event and help spread awareness</p>
         </article>
         <article class="col__3-2 feature-image">
